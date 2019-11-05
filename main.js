@@ -1,6 +1,6 @@
 console.log("Up and running!");
 
-const cards = ["queen", "queen", "king", "king"];
+var cards = ["queen", "queen", "king", "king"];
 var cards = [
 {
 	rank: 'queen',
@@ -37,7 +37,7 @@ var checkForMatch = function (){
 
 var flipCard = function() {
 	cardsInPlay.push(cards[cardId].rank);
-	cardId = this.getAttribute('data-id');
+	var cardId = this.getAttribute('data-id');
 	console.log("User flipped" + cards[cardId].rank);
 	console.log(cards[cardId].cardImage);
 	console.log(cards[cardId].suit);
